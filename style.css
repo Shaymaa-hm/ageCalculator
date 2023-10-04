@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+.blocks{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    width:90%;
+    
+    background-color: rgb(234, 234, 234);
+}
+.submit{
+    background-color:rgb(145, 52, 233);
+    padding:10px;
+    cursor:pointer;
+    border-width: 0px;
+    border-color: rgb(145, 52, 233);
+    border-radius:45px;
+    -webkit-border-radius:45px;
+    -moz-border-radius:45px;
+    -ms-border-radius:45px;
+    -o-border-radius:45px;
+}
+input .submit{
+    padding:50px;
+}
+.submit:hover{
+    background-color: black;
+}
+.all{
+    padding:30px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    border-radius:15px 15px 200px 15px;
+    -webkit-border-radius:15px 15px 200px 15px;
+    -moz-border-radius:15px 15px 200px 15px;
+    -ms-border-radius:15px 15px 200px 15px;
+    -o-border-radius:15px 15px 200px 15px;
+}
+.text-wrap{
+    vertical-align: middle;
+    display:inline-block;
+    width:88%;
+}
+.Btn{
+    padding:50px;
+}
+.block{
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+   }
+   
+   .title{
+    font-size: 15px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: #7d7979;
+    font-weight:bold;
+   }
+   
+   input[type=text] {
+    width: 100px;
+    margin: auto;
+    min-height: 25px;
+    border: 2px solid #868a8d;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #000000;
+    font-size: 17px;
+    font-weight:bold;
+   }
+   img{
+    padding:12px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+h1{
+    font-size: 60px;
+    font-weight:bold;
+}
+span{
+    color:rgb(145, 52, 233);
+}
+
+@media only screen and (max-width: 700px) {
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+        
+    }
+    .all{
+        width:65%;
+        margin:0px;
+    }
+    hr{
+        flex:1;
+    }
+    h1{
+        font-size:40px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    input[type=text] {
+        font-size: 15px;
+        width:40px;
+    }
+    .block{
+        width: 60%;
+        /* padding: 5px 5px; */
+        /* margin-left:0px; */
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
